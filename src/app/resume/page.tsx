@@ -2,9 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Download } from "lucide-react";
 
-// In a real application, you would host your own resume PDF.
-// We are using a dummy PDF for demonstration purposes.
-const resumeUrl = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
+// The resume PDF should be placed in the `public` folder.
+const resumeUrl = "/ParthaMondal_Resume.pdf";
 
 export default function ResumePage() {
   return (
