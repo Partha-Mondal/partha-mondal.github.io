@@ -11,6 +11,7 @@ const experiences = [
   {
     role: "Programmer Analyst",
     company: "Cognizant Technology Solution",
+    location: "Bangalore, Karnataka, India",
     period: "December 2021 - November 2023",
     description: "Developed and maintained backend services for enterprise applications. Worked extensively with Spring Boot, Hibernate, and various AWS services.",
   },
@@ -37,7 +38,7 @@ export default function WorkExperiencePage() {
               <CardHeader>
                 <CardTitle className="font-headline text-2xl">{exp.role}</CardTitle>
                 <CardDescription className="font-serif text-base">
-                  {exp.company} &bull; {exp.period}
+                  {exp.company} {exp.location && `(${exp.location})`} &bull; {exp.period}
                 </CardDescription>
               </CardHeader>
               <CardContent>
