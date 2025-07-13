@@ -3,7 +3,7 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: "Senior MuleSoft Developer",
+    role: "Associate",
     company: "Tech Solutions Inc.",
     period: "Jan 2022 - Present",
     description: "Led the design and development of critical integration projects using MuleSoft Anypoint Platform. Mentored junior developers and introduced best practices for API development and CI/CD pipelines.",
