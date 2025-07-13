@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Download } from "lucide-react";
+import Image from "next/image";
 
 // The resume PDF should be placed in the `public` folder.
 const resumeUrl = "/ParthaMondal_Resume.pdf";
+const resumeImageUrl = "/resume_preview.png";
 
 export default function ResumePage() {
   return (
@@ -25,13 +27,16 @@ export default function ResumePage() {
         </Button>
       </div>
 
-      <Card className="aspect-[8.5/11] w-full max-w-4xl mx-auto overflow-hidden shadow-2xl bg-card/60 backdrop-blur-sm">
-        <iframe
-          src={resumeUrl}
-          className="h-full w-full border-0"
-          title="Resume Viewer"
-          aria-label="Resume Preview"
-        />
+      <Card className="w-full max-w-4xl mx-auto overflow-hidden shadow-2xl bg-card/60 backdrop-blur-sm">
+        <CardContent className="p-2 md:p-4">
+            <Image
+                src={resumeImageUrl}
+                alt="Resume Preview"
+                width={850}
+                height={1100}
+                className="w-full h-auto rounded-md"
+            />
+        </CardContent>
       </Card>
     </div>
   );
