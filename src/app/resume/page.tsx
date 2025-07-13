@@ -30,6 +30,7 @@ export default function ResumePage() {
           src={resumeUrl}
           className="h-full w-full border-0"
           title="Resume Viewer"
+          aria-label="Resume Preview"
         />
       </Card>
     </div>
