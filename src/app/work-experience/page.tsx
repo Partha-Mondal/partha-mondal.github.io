@@ -13,7 +13,7 @@ const experiences = [
     company: "Cognizant Technology Solution",
     location: "Bangalore, Karnataka, India",
     period: "December 2021 - November 2023",
-    description: "Developed and maintained backend services for enterprise applications. Worked extensively with Spring Boot, Hibernate, and various AWS services.",
+    description: "Engineered robust database management systems using MySQL and MongoDB, optimizing data retrieval processes to decrease response times by 20% and improve overall application performance.",
   },
 ];
 
