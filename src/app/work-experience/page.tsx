@@ -4,8 +4,9 @@ import { Briefcase } from "lucide-react";
 const experiences = [
   {
     role: "Associate",
-    company: "Tech Solutions Inc.",
-    period: "Jan 2022 - Present",
+    company: "Cognizant Technology Solution",
+    location: "Kolkata, West Bengal, India",
+    period: "December 2023 - Present",
     description: "Led the design and development of critical integration projects using MuleSoft Anypoint Platform. Mentored junior developers and introduced best practices for API development and CI/CD pipelines.",
   },
   {
