@@ -10,8 +10,8 @@ const experiences = [
   },
   {
     role: "Programmer Analyst",
-    company: "Innovatech",
-    period: "Jun 2020 - Dec 2021",
+    company: "Cognizant Technology Solution",
+    period: "December 2021 - November 2023",
     description: "Developed and maintained backend services for enterprise applications. Worked extensively with Spring Boot, Hibernate, and various AWS services.",
   },
 ];
