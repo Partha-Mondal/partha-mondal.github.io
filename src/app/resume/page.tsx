@@ -1,0 +1,38 @@
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Download } from "lucide-react";
+
+// In a real application, you would host your own resume PDF.
+// We are using a dummy PDF for demonstration purposes.
+const resumeUrl = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
+
+export default function ResumePage() {
+  return (
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-8 md:mb-12">
+        <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tighter text-primary">
+          My Resume
+        </h1>
+        <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground font-serif">
+         Here is my professional resume. You can view it directly on this page or download it for your convenience.
+        </p>
+      </div>
+      <div className="flex justify-center mb-8">
+        <Button asChild size="lg">
+          <a href={resumeUrl} download="ParthaMondal_Resume.pdf">
+            <Download className="mr-2 h-5 w-5" />
+            Download Resume
+          </a>
+        </Button>
+      </div>
+
+      <Card className="aspect-[8.5/11] w-full max-w-4xl mx-auto overflow-hidden shadow-2xl bg-card/60 backdrop-blur-sm">
+        <iframe
+          src={resumeUrl}
+          className="h-full w-full border-0"
+          title="Resume Viewer"
+        />
+      </Card>
+    </div>
+  );
+}
