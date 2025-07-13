@@ -5,7 +5,7 @@ import Image from "next/image";
 
 // The resume PDF should be placed in the `public` folder.
 const resumeUrl = "/ParthaMondal_Resume.pdf";
-const resumeImageUrl = "/resume_preview.png";
+const resumeImageUrl = "/resume_preview.webp";
 
 export default function ResumePage() {
   return (
