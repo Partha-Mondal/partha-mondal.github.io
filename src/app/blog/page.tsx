@@ -1,33 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import { useFormStatus } from "react-dom";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { generateBlogSummary, GenerateBlogSummaryInput } from "@/ai/flows/generate-blog-summary";
 import { Wand2, Loader2 } from "lucide-react";
 
-function SubmitButton() {
-  const { pending } = useFormStatus();
-  return (
-    <Button type="submit" disabled={pending} className="w-full md:w-auto">
-      {pending ? (
-        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-      ) : (
-        <Wand2 className="mr-2 h-4 w-4" />
-      )}
-      Generate Summary
-    </Button>
-  );
-}
-
 export default function BlogPage() {
   const [summary, setSummary] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
 
-  async function handleSubmit(formData: FormData) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
     const blogPostContent = formData.get("blogPostContent") as string;
     
     if (!blogPostContent || blogPostContent.trim().length === 0) {
@@ -62,7 +49,7 @@ export default function BlogPage() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <form action={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <Textarea
               name="blogPostContent"
               placeholder="Paste your full blog post content here..."
