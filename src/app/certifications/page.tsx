@@ -12,31 +12,31 @@ const certifications = [
     icon: <Cpu className="h-8 w-8 text-primary" />,
     title: "Oracle Foundations Associate 2025",
     issuer: "Oracle",
-    date: "May 2021",
+    date: "July 2026",
   },
   {
     icon: <Award className="h-8 w-8 text-primary" />,
     title: "Salesforce Platform Developer I",
     issuer: "Salesforce",
-    date: "Mar 2023",
+    date: "Mar 2026",
   },
   {
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
     title: "Salesforce Administrator",
     issuer: "Salesforce",
-    date: "Jun 2022",
+    date: "Feb 2026",
   },
   {
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
     title: "Microsoft Dynamic 365 Fundamentals",
     issuer: "Microsoft",
-    date: "Dec 2021",
+    date: "Dec 2026",
   },
   {
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
     title: "Microsoft Power Platform Fundamentals",
     issuer: "Microsoft",
-    date: "Sep 2023",
+    date: "Sep 2026",
   },
 ];
 
