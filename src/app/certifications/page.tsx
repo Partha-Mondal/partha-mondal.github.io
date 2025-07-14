@@ -6,7 +6,7 @@ const certifications = [
     icon: <Cpu className="h-8 w-8 text-primary" />,
     title: "Oracle Cloud Infrastructure Foundation 2025",
     issuer: "Oracle",
-    date: "Jan 2024",
+    date: "July 2026",
   },
   {
     icon: <Cpu className="h-8 w-8 text-primary" />,
