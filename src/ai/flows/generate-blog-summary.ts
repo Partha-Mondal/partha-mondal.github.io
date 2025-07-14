@@ -1,4 +1,3 @@
-'use server';
 
 /**
  * @fileOverview Generates a concise summary of a blog post using AI.
