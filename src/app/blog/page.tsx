@@ -75,7 +75,7 @@ export default function BlogPage() {
          <Card className="max-w-4xl mx-auto mt-8 border-destructive bg-destructive/10">
           <CardHeader>
             <CardTitle className="text-destructive font-headline">Error</CardTitle>
-          </Header>
+          </CardHeader>
           <CardContent>
             <p className="font-serif text-destructive">{error}</p>
           </CardContent>
@@ -86,7 +86,7 @@ export default function BlogPage() {
         <Card className="max-w-4xl mx-auto mt-8 shadow-lg bg-card/60 backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="font-headline text-primary">Generated Summary</CardTitle>
-          </Header>
+          </CardHeader>
           <CardContent>
             <p className="font-serif text-lg">{summary}</p>
           </CardContent>
