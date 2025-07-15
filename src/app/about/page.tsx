@@ -5,9 +5,9 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto px-4">
       <Card className="overflow-hidden shadow-lg bg-card/60 backdrop-blur-sm mt-8 md:mt-12">
-        <CardContent className="p-8 md:p-12">
+        <CardContent className="p-6 md:p-12">
           <div className="flex flex-col md:flex-row gap-8 md:gap-12">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 mx-auto md:mx-0">
               <div className="relative h-64 w-64 rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src="/my_photo.webp"
@@ -18,7 +18,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="flex-grow">
-              <h2 className="font-headline text-3xl font-bold mb-4 text-primary">Partha Mondal</h2>
+              <h2 className="font-headline text-3xl font-bold mb-4 text-primary text-center md:text-left">Partha Mondal</h2>
               <div className="space-y-6 text-lg text-foreground/80 font-serif">
                 <p>
                   Highly motivated and results-oriented Software Engineer with four years of hands-on experience in designing, developing, and deploying robust integration solutions using the MuleSoft Anypoint Platform. Proficient in Java and skilled in implementing DevOps practices to streamline software development and delivery.Proven ability to contribute to all phases of the software development lifecycle, from requirements gathering to production support. Seeking to leverage my diverse skill set to build and maintain efficient and scalable enterprise-level applications.

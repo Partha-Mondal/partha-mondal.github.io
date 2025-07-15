@@ -36,23 +36,23 @@ const services = [
 
 export default function HomePage() {
   return (
-    <div className="container mx-auto px-4 space-y-24">
+    <div className="container mx-auto px-4 space-y-16 md:space-y-24">
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row items-center justify-center min-h-[calc(100vh-10rem)] text-center md:text-left">
+      <section className="flex flex-col md:flex-row items-center justify-center pt-12 md:pt-0 md:min-h-[calc(100vh-10rem)] text-center md:text-left">
         <div className="md:w-1/2 md:pr-12">
-          <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter text-primary leading-tight">
+          <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter text-primary leading-tight">
             Hi, I'm Partha Mondal
           </h1>
           <p className="mt-4 max-w-xl mx-auto md:mx-0 text-lg md:text-xl text-muted-foreground font-serif">
             Highly motivated, performance-focused software engineer with four years of hands-on experience designing, developing, and implementing scalable integration solutions using the MuleSoft Anypoint platform. Java expert and proficient in executing DevOps practices to speed up software development and delivery. With proven proficiency in executing work at all stages of the software development life cycle, from requirements gathering to production support. I seek to utilize my multifaceted skill set to design and develop efficient and scalable business applications.
           </p>
-          <div className="mt-8 flex justify-center md:justify-start gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
             <Button asChild size="lg">
               <Link href="/about">
                 More About Me <ArrowRight className="ml-2" />
               </Link>
             </Button>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center md:justify-start gap-2">
               {socialLinks.map((link, index) => (
                 <Button key={index} asChild variant="outline" size="icon">
                   <a href={link.href} target="_blank" rel="noopener noreferrer">
@@ -64,7 +64,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-          <div className="relative h-64 w-64 md:h-96 md:w-96">
+          <div className="relative h-64 w-64 sm:h-80 sm:w-80 md:h-96 md:w-96">
              <Image
                 src="/my_photo.webp"
                 alt="Partha Mondal"
@@ -79,7 +79,7 @@ export default function HomePage() {
       {/* What I Do Section */}
       <section>
         <div className="text-center mb-12">
-           <h2 className="font-headline text-4xl font-bold text-primary">What I Do</h2>
+           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">What I Do</h2>
            <p className="mt-2 text-lg text-muted-foreground font-serif">I build high-quality applications and websites.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

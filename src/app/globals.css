@@ -68,6 +68,8 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    /* Prevent text size inflation on mobile */
+    -webkit-text-size-adjust: 100%;
   }
   .font-serif {
     font-family: var(--font-alegreya);

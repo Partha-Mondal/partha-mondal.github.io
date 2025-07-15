@@ -29,10 +29,10 @@ export default function WorkExperiencePage() {
           A timeline of my professional journey and key accomplishments.
         </p>
       </div>
-      <div className="relative border-l-2 border-primary/20 pl-6 space-y-12">
+      <div className="relative border-l-2 border-primary/20 ml-4 pl-6 space-y-12">
         {experiences.map((exp, index) => (
           <div key={index} className="relative">
-            <div className="absolute -left-[1.6rem] top-1.5 h-6 w-6 rounded-full bg-primary flex items-center justify-center">
+            <div className="absolute -left-[1.9rem] top-1.5 h-6 w-6 rounded-full bg-primary flex items-center justify-center">
               <Briefcase className="h-4 w-4 text-primary-foreground" />
             </div>
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card/60 backdrop-blur-sm">

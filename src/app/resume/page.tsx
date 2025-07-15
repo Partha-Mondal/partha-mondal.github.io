@@ -28,7 +28,7 @@ export default function ResumePage() {
       </div>
 
       <Card className="w-full max-w-4xl mx-auto overflow-hidden shadow-2xl bg-card/60 backdrop-blur-sm">
-        <CardContent className="p-2 md:p-4">
+        <CardContent className="p-1 md:p-4">
             <Image
                 src={resumeImageUrl}
                 alt="Resume Preview"
