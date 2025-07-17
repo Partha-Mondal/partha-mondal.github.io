@@ -6,7 +6,7 @@ import { SidebarProvider } from '@/components/ui/sidebar';
 import { AppSidebar } from '@/components/layout/app-sidebar';
 import { AnimatedBackground } from '@/components/animated-background';
 import { ThemeProvider } from '@/components/theme-provider';
-import { ThemeToggle } from '@/components/theme-toggle';
+import { AppHeader } from '@/components/layout/app-header';
 
 export const metadata: Metadata = {
   title: 'Partha Mondal',
@@ -32,9 +32,7 @@ export default function RootLayout({
           <SidebarProvider defaultOpen={false}>
             <AppSidebar />
             <div className="flex flex-col w-full relative">
-              <div className="absolute top-4 right-4 z-20">
-                <ThemeToggle />
-              </div>
+               <AppHeader />
               <main className="flex-1 overflow-y-auto p-4 md:p-8">
                 {children}
               </main>
