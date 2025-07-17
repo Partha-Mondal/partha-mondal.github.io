@@ -1,6 +1,6 @@
-import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter } from "@/components/ui/sidebar";
+import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter, SidebarTrigger } from "@/components/ui/sidebar";
 import Link from "next/link";
-import { Code } from "lucide-react";
+import { Code, X } from "lucide-react";
 import { AppSidebarNav } from "./app-sidebar-nav";
 
 export function AppSidebar() {
@@ -11,6 +11,11 @@ export function AppSidebar() {
            <Link href="/" className="flex items-center gap-2">
               <Code className="h-8 w-8 text-primary" />
           </Link>
+          <div className="md:hidden">
+            <SidebarTrigger variant="ghost" size="icon" className="h-8 w-8 p-0">
+                <X className="h-5 w-5" />
+            </SidebarTrigger>
+          </div>
         </div>
       </SidebarHeader>
       <SidebarContent>
