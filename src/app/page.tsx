@@ -8,8 +8,8 @@ import { Github, Linkedin } from 'lucide-react';
 import { FlipCard } from '@/components/flip-card';
 
 const socialLinks = [
-  { icon: <Github className="h-6 w-6" />, href: 'https://github.com/Partha-Mondal' },
-  { icon: <Linkedin className="h-6 w-6" />, href: 'https://www.linkedin.com/in/partha-m-271572132/' },
+  { icon: <Github className="h-6 w-6" />, href: 'https://github.com/Partha-Mondal', name: 'github' },
+  { icon: <Linkedin className="h-6 w-6" />, href: 'https://www.linkedin.com/in/partha-m-271572132/', name: 'linkedin' },
 ];
 
 const services = [
@@ -128,7 +128,7 @@ export default function HomePage() {
                 </a>
               </Button>
               <div className="flex items-center justify-center gap-2">
-                {socialLinks.map((link, index) => (
+                {socialLinks.filter(link => link.name !== 'github').map((link, index) => (
                   <Button key={index} asChild variant="outline" size="icon">
                     <a href={link.href} target="_blank" rel="noopener noreferrer">
                       {link.icon}
