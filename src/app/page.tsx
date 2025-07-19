@@ -118,8 +118,8 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Button asChild variant="link" className="text-lg">
-                <a href="mailto:partha.mondal.contact@gmail.com">
-                  <Mail className="mr-2" /> partha.mondal.contact@gmail.com
+                <a href="mailto:aec.parthamondal@gmail.com">
+                  <Mail className="mr-2" /> aec.parthamondal@gmail.com
                 </a>
               </Button>
               <div className="flex items-center justify-center gap-2">
