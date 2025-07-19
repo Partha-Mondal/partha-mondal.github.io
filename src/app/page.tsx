@@ -2,8 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, Code, Component, Server, Cloud } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { ArrowRight, Code, Component, Server, Cloud, Mail } from 'lucide-react';
 import { Github, Linkedin } from 'lucide-react';
 import { FlipCard } from '@/components/flip-card';
 
@@ -103,6 +103,37 @@ export default function HomePage() {
             />
           ))}
         </div>
+      </section>
+
+      {/* Contact Section */}
+      <section>
+        <div className="text-center mb-12">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Get in Touch</h2>
+          <p className="mt-2 text-lg text-muted-foreground font-serif">I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+        </div>
+        <Card className="max-w-2xl mx-auto shadow-lg bg-card/60 backdrop-blur-sm">
+          <CardContent className="p-6 md:p-8 text-center">
+            <p className="font-serif text-lg text-muted-foreground mb-6">
+              Feel free to reach out to me via email or connect with me on social media.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <Button asChild variant="link" className="text-lg">
+                <a href="mailto:partha.mondal.contact@gmail.com">
+                  <Mail className="mr-2" /> partha.mondal.contact@gmail.com
+                </a>
+              </Button>
+              <div className="flex items-center justify-center gap-2">
+                {socialLinks.map((link, index) => (
+                  <Button key={index} asChild variant="outline" size="icon">
+                    <a href={link.href} target="_blank" rel="noopener noreferrer">
+                      {link.icon}
+                    </a>
+                  </Button>
+                ))}
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </section>
     </div>
   );
