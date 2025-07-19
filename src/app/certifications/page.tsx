@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Award, ShieldCheck, Cpu } from "lucide-react";
+import { FlipCard } from "@/components/flip-card";
 
 const certifications = [
   {
@@ -53,19 +54,29 @@ export default function CertificationsPage() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {certifications.map((cert, index) => (
-          <Card key={index} className="flex flex-col items-center text-center p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card/60 backdrop-blur-sm">
-            <CardHeader>
-              {cert.icon}
-            </CardHeader>
-            <CardContent>
-              <CardTitle className="font-headline text-xl mb-2">{cert.title}</CardTitle>
-              <CardDescription className="font-serif">
-                {cert.issuer}
-                <br />
-                <span className="text-sm text-muted-foreground">{cert.date}</span>
-              </CardDescription>
-            </CardContent>
-          </Card>
+           <FlipCard
+              key={index}
+              frontContent={
+                <>
+                  <CardHeader>
+                    {cert.icon}
+                  </CardHeader>
+                  <CardContent>
+                    <CardTitle className="font-headline text-xl text-center">{cert.title}</CardTitle>
+                  </CardContent>
+                </>
+              }
+              backContent={
+                 <CardContent className="text-center">
+                    <CardTitle className="font-headline text-xl mb-2">{cert.issuer}</CardTitle>
+                    <CardDescription className="font-serif">
+                      Expires
+                      <br />
+                      <span className="text-sm text-muted-foreground">{cert.date}</span>
+                    </CardDescription>
+                  </CardContent>
+              }
+            />
         ))}
       </div>
     </div>
