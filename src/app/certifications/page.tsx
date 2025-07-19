@@ -57,23 +57,20 @@ export default function CertificationsPage() {
            <FlipCard
               key={index}
               frontContent={
-                <>
-                  <CardHeader>
+                <div className="flex flex-col items-center text-center p-4">
                     {cert.icon}
-                  </CardHeader>
-                  <CardContent>
-                    <CardTitle className="font-headline text-xl text-center">{cert.title}</CardTitle>
-                  </CardContent>
-                </>
+                    <CardTitle className="font-headline text-xl mt-4">{cert.title}</CardTitle>
+                    <CardDescription className="font-serif mt-2">
+                      {cert.issuer}
+                    </CardDescription>
+                     <CardDescription className="font-serif mt-2">
+                      Expires: {cert.date}
+                    </CardDescription>
+                </div>
               }
               backContent={
                  <CardContent className="text-center">
                     <CardTitle className="font-headline text-xl mb-2">{cert.issuer}</CardTitle>
-                    <CardDescription className="font-serif">
-                      Expires
-                      <br />
-                      <span className="text-sm text-muted-foreground">{cert.date}</span>
-                    </CardDescription>
                   </CardContent>
               }
             />
