@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Code, Component, Server, Cloud } from 'lucide-react';
 import { Github, Linkedin } from 'lucide-react';
+import { FlipCard } from '@/components/flip-card';
 
 const socialLinks = [
   { icon: <Github className="h-6 w-6" />, href: 'https://github.com/Partha-Mondal' },
@@ -82,17 +83,24 @@ export default function HomePage() {
            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">What I Do</h2>
            <p className="mt-2 text-lg text-muted-foreground font-serif">I build high-quality applications and websites.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="text-center p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card/60 backdrop-blur-sm">
-              <CardHeader className="flex items-center justify-center">
-                {service.icon}
-              </CardHeader>
-              <CardContent>
-                <CardTitle className="font-headline text-xl mb-2">{service.title}</CardTitle>
-                <p className="font-serif text-muted-foreground">{service.description}</p>
-              </CardContent>
-            </Card>
+            <FlipCard
+              key={index}
+              frontContent={
+                <>
+                  <CardHeader>{service.icon}</CardHeader>
+                  <CardContent>
+                    <CardTitle className="font-headline text-xl">{service.title}</CardTitle>
+                  </CardContent>
+                </>
+              }
+              backContent={
+                <CardContent>
+                  <p className="font-serif text-muted-foreground">{service.description}</p>
+                </CardContent>
+              }
+            />
           ))}
         </div>
       </section>
