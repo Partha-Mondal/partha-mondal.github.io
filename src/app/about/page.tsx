@@ -21,21 +21,34 @@ export default function AboutPage() {
               <h2 className="font-headline text-3xl font-bold mb-4 text-primary text-center md:text-left">Partha Mondal</h2>
               <div className="space-y-6 text-lg text-foreground/80 font-serif">
                 <p>
-                  Highly motivated and results-oriented Software Engineer with four years of hands-on experience in designing, developing, and deploying robust integration solutions using the MuleSoft Anypoint Platform. Proficient in Java and skilled in implementing DevOps practices to streamline software development and delivery.Proven ability to contribute to all phases of the software development lifecycle, from requirements gathering to production support. Seeking to leverage my diverse skill set to build and maintain efficient and scalable enterprise-level applications.
+                Experienced Software Engineer with a strong foundation in Java, MuleSoft Anypoint Platform, and DevOps practices.
                 </p>
                 <p>
-                  I led initiatives to automate deployment processes, resulting in a 30% reduction in deployment
-time and a significant decrease in error rates. This experience has equipped me with strong
-problem-solving skills and the ability to collaborate effectively with cross-functional teams to achieve
-project goals. Solid Frontend Developer, experienced using Jenkins, CI/CD pipelines and delivering
-multiple large releases for web applications. Experienced working with designers and back-end developers
-to convert design mockups into complete, customised websites Excellent test and debug skills to deliver
-highly reliable, performant code. Up to date with modern frontend development trends and practice.
-Achieved the next level of orchestrating our centralized server environment with more advanced practical
-load balancing and security enhancements. This decrease translated into a 45% improvement in
-system uptime and better behaved operation under different loading conditions. Integrated more
-modern orchestration along with the security controls which made it so that only trusted clients can
-connect to the appropriate resources and ensure a certain level of redundancy.
+                Proven track record of contributing across all phases of the software development lifecycle, from design to deployment.
+                </p>
+                <p>
+                Successfully automated deployment processes, significantly reducing deployment time and minimizing manual error rates.
+                </p>
+                <p>
+                Collaborated with cross-functional teams to align development with business goals and ensure timely project delivery.
+                </p>
+                <p>
+                Designed and developed large-scale, enterprise web applications, leveraging Jenkins, CI/CD pipelines, and modern development frameworks.
+                </p>
+                <p>
+                Ensured high reliability and performance through strong unit testing, integration testing, and expert debugging skills.
+                </p>
+                <p>
+                Orchestrated centralized server environments, implementing advanced load balancing, high availability, and enhanced security mechanisms.
+                </p>
+                <p>
+                Integrated modern orchestration and API security controls to establish trusted, redundant, and secure client-server connections.
+                </p>
+                <p>
+                Passionate about building efficient, scalable, and secure applications that solve complex business problems.
+                </p>
+                <p>
+                Eager to contribute to forward-thinking teams and continue delivering robust solutions in challenging and evolving environments.
                 </p>
               </div>
             </div>
