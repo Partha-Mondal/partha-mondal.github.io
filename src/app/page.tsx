@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { ArrowRight, Code, Component, Server, Cloud, Mail } from 'lucide-react';
+import { ArrowRight, Code, Component, Server, Cloud, Mail, Phone } from 'lucide-react';
 import { Github, Linkedin } from 'lucide-react';
 import { FlipCard } from '@/components/flip-card';
 
@@ -111,15 +111,20 @@ export default function HomePage() {
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Get in Touch</h2>
           <p className="mt-2 text-lg text-muted-foreground font-serif">I'm always open to discussing new projects, creative ideas, or opportunities.</p>
         </div>
-        <Card className="max-w-2xl mx-auto shadow-lg bg-card/60 backdrop-blur-sm">
+        <Card className="max-w-4xl mx-auto shadow-lg bg-card/60 backdrop-blur-sm">
           <CardContent className="p-6 md:p-8 text-center">
             <p className="font-serif text-lg text-muted-foreground mb-6">
               Feel free to reach out to me via email or connect with me on social media.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center flex-wrap gap-x-6 gap-y-4">
               <Button asChild variant="link" className="text-lg">
                 <a href="mailto:aec.parthamondal@gmail.com">
                   <Mail className="mr-2" /> aec.parthamondal@gmail.com
+                </a>
+              </Button>
+               <Button asChild variant="link" className="text-lg">
+                <a href="tel:+918617044453">
+                  <Phone className="mr-2" /> +91 8617044453
                 </a>
               </Button>
               <div className="flex items-center justify-center gap-2">
