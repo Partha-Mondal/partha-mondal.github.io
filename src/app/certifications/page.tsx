@@ -39,6 +39,12 @@ const certifications = [
     issuer: "Microsoft",
     date: "Sep 2026",
   },
+  {
+    icon: <ShieldCheck className="h-8 w-8 text-primary" />,
+    title: "Microsoft Azure Fundamentals",
+    issuer: "Microsoft",
+    date: "N/A",
+  },
 ];
 
 export default function CertificationsPage() {
