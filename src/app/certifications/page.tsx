@@ -43,7 +43,7 @@ const certifications = [
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
     title: "Microsoft Azure Fundamentals",
     issuer: "Microsoft",
-    date: "N/A",
+    date: "May 2026",
   },
 ];
 
