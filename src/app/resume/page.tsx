@@ -20,7 +20,7 @@ export default function ResumePage() {
       </div>
       <div className="flex justify-center mb-8">
         <Button asChild size="lg">
-          <a href={resumeUrl} download="ParthaMondal_Resume.pdf">
+          <a href={resumeUrl} download>
             <Download className="mr-2 h-5 w-5" />
             Download Resume
           </a>
