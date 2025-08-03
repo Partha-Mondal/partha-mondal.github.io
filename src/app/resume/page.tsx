@@ -19,12 +19,12 @@ export default function ResumePage() {
         </p>
       </div>
       <div className="flex justify-center mb-8">
-        <Button asChild size="lg">
-          <a href={resumeUrl} download="ParthaMondal_Resume.pdf">
+        <a href={resumeUrl} download="ParthaMondal_Resume.pdf">
+          <Button size="lg">
             <Download className="mr-2 h-5 w-5" />
             Download Resume
-          </a>
-        </Button>
+          </Button>
+        </a>
       </div>
 
       <Card className="w-full max-w-4xl mx-auto overflow-hidden shadow-2xl bg-card/60 backdrop-blur-sm">
